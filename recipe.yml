@@ -38,7 +38,7 @@ stages:
       - name: install-kvm-stuff
         type: shell
         commands:
-          - apt-get install qemu uml-utilities virt-manager git wget libguestfs-tools p7zip-full make dmg2img tesseract-ocr tesseract-ocr-eng genisoimage vim net-tools screen -y
+          - apt-get install qemu-system uml-utilities virt-manager git wget libguestfs-tools p7zip-full make dmg2img tesseract-ocr tesseract-ocr-eng genisoimage vim net-tools screen -y
 
       - name: example-packages # Sample module using the built-in Apt module to install packages
         type: apt
