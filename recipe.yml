@@ -23,19 +23,7 @@ stages:
 
       # Put your custom actions behind this comment
 
-      - name: install-docker
-        type: shell
-        commands:
-          - install -m 0755 -d /etc/apt/keyrings
-          - curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc
-          - chmod a+r /etc/apt/keyrings/docker.asc
-          - echo \
-            "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian bookworm stable" > /etc/apt/sources.list.d/docker.list
-          - cat /etc/apt/sources.list.d/docker.list
-          - apt-get update
-          - apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-
-      # - name: install-kvm-stuff
+#      - name: install-kvm-stuff
       #   type: shell
       #   commands:
       #     - apt-get install qemu-system uml-utilities virt-manager git wget libguestfs-tools p7zip-full make dmg2img tesseract-ocr tesseract-ocr-eng genisoimage vim net-tools screen -y
