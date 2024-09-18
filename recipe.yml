@@ -24,24 +24,24 @@ stages:
       # Put your custom actions behind this comment
 
       - name: install-kvm-stuff
-         type: apt
-         source:
-          packages:
-            - qemu-system
-            - uml-utilities
-            - virt-manager
-            - git
-            - wget
-            - libguestfs-tools
-            - p7zip-full
-            - make
-            - dmg2img
-            - tesseract-ocr
-            - tesseract-ocr-eng
-            - genisoimage
-            - vim
-            - net-tools
-            - screen
+        type: apt
+        source:
+        packages:
+          - qemu-system
+          - uml-utilities
+          - virt-manager
+          - git
+          - wget
+          - libguestfs-tools
+          - p7zip-full
+          - make
+          - dmg2img
+          - tesseract-ocr
+          - tesseract-ocr-eng
+          - genisoimage
+          - vim
+          - net-tools
+          - screen
 
       # Put your custom actions before this comment
 
